@@ -41,6 +41,19 @@ public class HelloController
     }
 
     /**
+     * Sample Endpoint which returns team information
+     *
+     * @return -
+     */
+    @SuppressWarnings("nls")
+    @RequestMapping(value = "/company", method = RequestMethod.GET)
+    public String teamInfo()
+    {
+        return "{\"team\": \"Los Impredixibles\",\"members\": [{\"name\": \"Eric Zuchovicki\"}, {\"name\": \"Omar Ramirez\"}, {\"name\": \"Luis Lopez\"}, {\"name\": \"Mauricio Radin\"\n" +
+                "\t},{\"name\": \"Maximiliano Marquez\"}]}";
+    }
+
+    /**
      * @return -
      */
     @SuppressWarnings("nls")

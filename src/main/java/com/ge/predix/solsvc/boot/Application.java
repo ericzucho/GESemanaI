@@ -165,7 +165,7 @@ public class Application
     private Predicate<String> paths()
     {
         return or(regex("/echo/*"), //$NON-NLS-1$
-                regex("/health")); //$NON-NLS-1$
+                regex("/company"),regex("/health")); //$NON-NLS-1$
         // regex("/info")); //$NON-NLS-1$
     }
 
